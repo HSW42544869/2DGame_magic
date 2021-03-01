@@ -21,12 +21,15 @@ public class Enemy : MonoBehaviour
     [Header("死亡音效")]
     public AudioClip sounddead;
 
+    
     private AudioSource aud;
     public Transform player;
     private Rigidbody2D rig;
     private float timer = 0;
     private Animator ani;
+   
 
+    
     private void Awake()
     {
         //玩家變形 = 遊戲物件.尋找("玩家物件名稱").變形
@@ -45,6 +48,7 @@ public class Enemy : MonoBehaviour
 
     private void Move()
     {
+        
         if (player.position.x > transform.position.x)
         {
             transform.eulerAngles = Vector3.zero;

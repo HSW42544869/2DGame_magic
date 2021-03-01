@@ -9,6 +9,8 @@ TagManager:
   - Key
   - Speedup
   - addLive
+  - Laser
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -57,4 +59,7 @@ TagManager:
     locked: 0
   - name: article
     uniqueID: 3041388565
+    locked: 0
+  - name: light
+    uniqueID: 2744699415
     locked: 0
