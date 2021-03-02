@@ -57,14 +57,20 @@ public class Player : MonoBehaviour
         //僅限於此(類型)在場景上只有一個
         gm = FindObjectOfType<Gamemanager>();
     }
+    /// <summary>
+    /// 傳送門
+    /// </summary>
+    /// <param name="collision"></param>
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        //進入傳送門
         if (collision.name.Equals("傳送門") || collision.tag.Equals("Finish"))
         {
             inPortal = true;
             gm.showMessage(true);
         }
     }
+        //離開傳送門
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.name == "傳送門" || collision.tag.Equals("Finish"))
@@ -74,11 +80,7 @@ public class Player : MonoBehaviour
         }
     }
 
-    private void Start()
-    {
-
-    }
-
+   
     /// <summary>
     /// 移動功能
     /// </summary>
@@ -183,23 +185,31 @@ public class Player : MonoBehaviour
 
         //if (Gamemanager.live > 1) Invoke("Replay", 2.5f);
     }
-
+    /// <summary>
+    /// 回復前一動
+    /// </summary>
     private void Replay()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
+    /// <summary>
+    /// 前往下一關
+    /// </summary>
     private void Nextlevel()
     {
-        if (inPortal && Input.GetKeyDown(KeyCode.R))
+        if (inPortal && Input.GetKeyDown(KeyCode.R))                    //如果在門裡面
         {
-            int lvIndex = SceneManager.GetActiveScene().buildIndex;
+            int lvIndex = SceneManager.GetActiveScene().buildIndex;     //取得當前場景編號
 
-            lvIndex++;
+            lvIndex++;                                                  //編號加一
 
-            SceneManager.LoadScene(lvIndex);
+            SceneManager.LoadScene(lvIndex);                            //載入下一關
 
         }
     }
+    /// <summary>
+    /// 背包開啟&&關閉
+    /// </summary>
     void OpenMyBag()
     {
         if (Input.GetKeyDown(KeyCode.B))

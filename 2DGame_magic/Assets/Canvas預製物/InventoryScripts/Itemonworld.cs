@@ -15,6 +15,9 @@ public class Itemonworld : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    /// <summary>
+    /// 新增物品
+    /// </summary>
     public void AddNewItem()
     {
         if (!playerInventory.itemList.Contains(thisItem))
