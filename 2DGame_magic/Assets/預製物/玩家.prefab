@@ -159,7 +159,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2.24
   isGround: 0
-  spells: {fileID: 8360667018871773378, guid: 7a2cfaf1bee4801429d89f2940ac6f9d, type: 3}
+  spells: {fileID: 100000, guid: 46e5113392a8a394da11e1781a85dc2d, type: 3}
   point: {fileID: 4395220466906086054}
   Speedspelles: 500
   soundFire: {fileID: 8300000, guid: 624927579b63a5a4eb8feaa8517e3b9f, type: 3}
