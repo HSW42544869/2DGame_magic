@@ -137,7 +137,7 @@ public class Player : MonoBehaviour
             directY.y = Mathf.Clamp(directY.y, -1f, 1f);
 
 
-            //print("MO" + (worldPosition - transform.position));
+            
             spellsIns.GetComponent<Rigidbody2D>().AddForce((transform.right + directY) * Speedspelles);
             //spellsIns.GetComponent<Rigidbody2D>().AddForce(transform.right * Speedspelles);
 
@@ -155,15 +155,15 @@ public class Player : MonoBehaviour
                     gm.ShowGameMenu(false);
                 }
                 break;
-            case "Key":
+            case "Key":     //鑰匙物件
                 gm.addKey();
                 Destroy(collision.collider.transform.gameObject);
                 break;
-            case "Speedup":
+            case "Speedup": //加速物件
                 speed += 2;
                 Destroy(collision.collider.transform.gameObject);
                 break;
-            case "addLive":
+            case "addLive": //生命增加
                 gm.addLive();
                 Destroy(collision.collider.transform.gameObject);
                 break;
@@ -212,7 +212,7 @@ public class Player : MonoBehaviour
     /// </summary>
     void OpenMyBag()
     {
-        if (Input.GetKeyDown(KeyCode.B))
+        if (Input.GetKeyDown(KeyCode.B))        //如果按下B
         {
             isOpen = !isOpen;
             myBag.SetActive(isOpen);

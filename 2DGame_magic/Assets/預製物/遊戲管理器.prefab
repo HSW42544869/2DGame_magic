@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &838137194051666616
+--- !u!1 &276562072459067459
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,9 +8,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 838137194051666614}
-  - component: {fileID: 838137194051666615}
-  - component: {fileID: 1808011814}
+  - component: {fileID: 276562072459067456}
+  - component: {fileID: 276562072459067457}
+  - component: {fileID: 276562072459067458}
   m_Layer: 0
   m_Name: "\u904A\u6232\u7BA1\u7406\u5668"
   m_TagString: Untagged
@@ -18,13 +18,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &838137194051666614
+--- !u!4 &276562072459067456
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 838137194051666616}
+  m_GameObject: {fileID: 276562072459067459}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -7.1586237, y: 233.57965, z: -3.5451012}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -32,13 +32,13 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &838137194051666615
+--- !u!114 &276562072459067457
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 838137194051666616}
+  m_GameObject: {fileID: 276562072459067459}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1daf53eb0a83a4d4d9ef3589456c419c, type: 3}
@@ -49,13 +49,13 @@ MonoBehaviour:
   final: {fileID: 0}
   player: {fileID: 0}
   gameover: {fileID: 8300000, guid: 6ddb80de3f6e3f84caa8192957c22982, type: 3}
---- !u!82 &1808011814
+--- !u!82 &276562072459067458
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 838137194051666616}
+  m_GameObject: {fileID: 276562072459067459}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
